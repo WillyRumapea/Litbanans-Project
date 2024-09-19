@@ -1,0 +1,46 @@
+body {
+  font-family: "Jaro", sans-serif;
+  background-color: #fffaa6;
+}
+
+.container-title h1 {
+  box-shadow: 5px 5px 2px #000;
+  background-color: #fbc606;
+}
+
+.container-form form {
+  background: radial-gradient(circle, #fffbba, #fff);
+  box-shadow: 2px 10px 2px #000;
+}
+
+.container-form form input::placeholder {
+  color: #000000c4;
+}
+
+.container-form form button.regis-user-button {
+  background-color: #ff7a01;
+}
+
+body p {
+  font-family: "Jaldi", sans-serif;
+}
+
+body p a {
+  color: #ff7a01;
+  text-decoration: none;
+  font-family: "Jaldi", sans-serif;
+}
+
+body p a:hover {
+  color: #ff7a01;
+}
+
+@media screen and (max-width: 480px) {
+  .container-title h1 {
+    width: 20% !important;
+  }
+
+  .container-form form {
+    width: 80% !important;
+  }
+}

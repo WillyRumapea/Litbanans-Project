@@ -1,0 +1,125 @@
+body {
+  font-family: "Jaro", system-ui;
+  background-color: #fffaa6;
+}
+
+.container-img img.logo-img {
+  width: 130px;
+  height: 100px;
+}
+
+nav .container-nav a {
+  color: #000;
+}
+
+.container-button-login button.button-login {
+  border-radius: 5px !important;
+  outline: none;
+  border: 0.5px solid;
+  background-color: #ff7a01;
+  box-shadow: 2px 1px 2px #000;
+}
+
+.container-button-login button.button-daftar {
+  border-radius: 5px !important;
+  outline: none;
+  border: 0.5px solid;
+  background-color: #fffaa6;
+  box-shadow: 2px 1px 2px #000;
+}
+
+section.home-section {
+  height: 105vh !important;
+}
+
+section.home-section .container-img-home img.center-img {
+  width: 400px;
+  height: 200px;
+  transform: translate(36vw, 35vh);
+}
+
+section.home-section .container-img-home .bottom-img-home img {
+  width: 250px;
+  height: 250px;
+}
+
+section.home-section .container-img-home .bottom-img-home {
+  /* border: 1px solid #0000ff; */
+  height: 110vh;
+}
+
+section.home-section .container-img-home .bottom-img-home img.home-left-img {
+  /* transform: translate(-2vh, 15vw); */
+  position: relative;
+}
+
+section.home-section .container-img-home .bottom-img-home img.home-right-img {
+  position: relative;
+  bottom: 10px;
+  /* transform: translate(115vh, 15vw); */
+}
+
+section.home-section .container-img-home .bottom-img-home button {
+  width: 270px;
+  height: 80px;
+  background-color: #ff7a01;
+  border-radius: 12px;
+  box-shadow: 6px 5px 2px #000;
+  border: 1px solid #000;
+}
+
+section.about-section {
+  border: 1px solid #fbc606;
+  background-color: #fbc606;
+  border-radius: 15px;
+}
+
+.content-about img.about-img {
+  width: 400px;
+  height: 400px;
+}
+
+.content-about p.text-about {
+  font-family: "Jaldi", sans-serif;
+  height: 80vh;
+}
+
+.content-product-section p {
+  font-family: "Jaldi", system-ui;
+}
+
+.content-product-section .type-product img {
+  width: 30vw;
+  height: 60vh;
+}
+
+.content-product-section .product-collection img {
+  width: 30vw;
+  height: 40vh;
+}
+
+.button-product-section button {
+  width: 270px;
+  height: 80px;
+  background-color: #ff7a01;
+  border-radius: 12px;
+  box-shadow: 6px 5px 2px #000;
+  border: 1px solid #000;
+}
+
+footer {
+  background-color: #fbc606;
+}
+
+.container-logo-footer img {
+  width: 230px;
+  height: 80px;
+  border: none;
+  border-radius: 7px;
+  background-color: #fffaa6;
+  box-shadow: 0 5px 2px #222;
+}
+
+.social-med-group ul li a {
+  color: #ff7a01;
+}
