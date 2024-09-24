@@ -20,7 +20,7 @@ const hargaProduk = {
 const topping = {
   oreo: 2000,
   keju: 3000,
-  chocochip: 2000,
+  chococip: 2000,
   redvelvet: 3000,
   almond: 3000,
   meises: 1000,

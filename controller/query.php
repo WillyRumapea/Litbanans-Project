@@ -11,8 +11,9 @@
         $porsi = htmlspecialchars($data["porsi"]);
         $pesan = htmlspecialchars($data["pesan"]);
         $harga = htmlspecialchars($data["harga"]);
+        $status_pembayaran = 0;
 
-        $qpost = "INSERT INTO order_table VALUES ('','$nama','$produk','$rasa','$topping','$porsi','$pesan','$harga')";
+        $qpost = "INSERT INTO order_table VALUES ('','$nama','$produk','$rasa','$topping','$porsi','$pesan','$harga','$status_pembayaran')";
 
         mysqli_query($conn,$qpost);
 

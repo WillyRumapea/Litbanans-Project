@@ -3,7 +3,18 @@ const productType = document.querySelectorAll(".type-product img");
 
 buttonOrder.forEach((b) => {
   b.addEventListener("click", () => {
-    window.location.href = "page/user/orderForm.php";
+    fetch("controller/check_loggin.php")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.logged_in) {
+          window.location.href = "page/user/orderForm.php";
+        } else {
+          window.location.href = "page/user/loginUser.php";
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   });
 });
 

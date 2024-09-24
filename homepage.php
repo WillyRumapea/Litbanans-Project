@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,8 +42,12 @@
                 </div>
             </nav>
             <div class="container-button-login p-2">
-                <button class="px-3 py-1 button-login">Login</button>
-                <button class="px-3 py-1 button-daftar ms-1">Daftar</button>
+                <?php if(isset($_SESSION["username"])):?>
+                    <span class="username fs-5" style="border: 1px solid; background-color:darkorange; border-radius:5px; padding:5px; box-shadow: 2px 1px 2px #000;"><?= htmlspecialchars($_SESSION["username"])?></span>
+                <?php else:?>
+                    <button class="px-3 py-1 button-login">Login</button>
+                    <button class="px-3 py-1 button-daftar ms-1">Daftar</button>
+                <?php endif;?>    
             </div>
         </div>
     </header>

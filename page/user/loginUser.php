@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require "../../controller/connection.php";
 
     if(isset($_POST["login"])){
@@ -12,6 +13,7 @@
     if(mysqli_num_rows($result) === 1){
         $row = mysqli_fetch_assoc($result);
         if(password_verify($password,$row["password"])){
+            $_SESSION["username"] = $username;
             header("Location: ../../homepage.php");
             exit;
         }else{

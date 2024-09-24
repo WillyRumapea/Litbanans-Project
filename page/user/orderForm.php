@@ -3,10 +3,7 @@
 
     if(isset($_POST["order"])){
         if(addOrder($_POST) > 0){
-            echo"<script>
-                alert('terimakasih sudah memesan, pesanan mu sedang dibuat');
-                document.location.href = '../../homepage.php';
-            </script>";
+            header('Location: waiting_payment.php');
         }else{
             echo"<script>
                 alert('maaf pesanan mu gagal di input');
