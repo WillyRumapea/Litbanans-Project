@@ -32,13 +32,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
     <!-- fonts -->
+
+    <!-- midtrans -->
+    <script type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-nm4OslX-dTOVAPJg"></script>
+    <!-- midtrans -->
 </head>
 <body class="mt-4">
     <div class="container-title d-flex align-items-center justify-content-center py-2 px-2">
         <h1 class="title text-center w-50 w-sm-25 h2 rounded">Order Disini!!</h1>
     </div>
     <div class="container-form d-flex align-items-center justify-content-center">
-        <form action="" method="post" class="bg-white d-flex justify-content-center d-flex align-items-center flex-column h-100 w-50 rounded">
+        <form action="" method="post" class="bg-white d-flex justify-content-center d-flex align-items-center flex-column h-100 w-50 rounded" id="order-form">
                     <input class="text-center w-75 my-3 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="text" name="nama" placeholder="nama" required>
                     <select class="my-3 w-75 text-center border-black border-top-0 border-start-0 border-end-0 border-bottom-10" name="produk" id="produk">
                         <option value="pisang_lumer">pisang lumer</option>
@@ -64,7 +70,10 @@
                     <input class="text-center w-75 my-3 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="number" name="porsi" placeholder="porsi" id="porsi" required>
                     <textarea class="my-3 w-75 text-center border-black border-top-0 border-start-0 border-end-0 border-bottom-10" name="pesan" placeholder="ada pesan ??"></textarea>
                     <input class="text-center w-75 my-3 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="number" type="number" name="harga" placeholder="Rp" id="harga" readonly>
-            <button class="button-order login-user-button text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Order!!</button>
+                    <div class="conteiner-button-order">
+                        <button class="button-order text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Order!!</button>
+                        <button class="button-order-paygate text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Order via Gopay!!</button>
+                    </div>
         </form>
     </div>
     <!-- sweet alert script -->
@@ -74,5 +83,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js bootstrap -->
     <script src="../../script/calculator.js"></script>
+    <script src="../../script/orderPaygate.js"></script>
 </body>
 </html>
