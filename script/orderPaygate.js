@@ -11,8 +11,18 @@ orderPaygate.addEventListener("click", async (e) => {
       body: formData,
     });
     const token = await response.text();
-    window.snap.pay(token);
-    console.log(token);
+    window.snap.pay(token, {
+      onSuccess: function (result) {
+        alert("payment success!!");
+        console.log(result);
+        window.location.href = "../../homepage.php";
+      },
+      onError: function (result) {
+        alert("payment failed!!");
+        console.log(result);
+        window.location.href = "../../homepage.php";
+      },
+    });
   } catch (err) {
     console.log(err.message);
   }

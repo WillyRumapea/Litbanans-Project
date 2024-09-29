@@ -1,5 +1,7 @@
 const buttonOrder = document.querySelectorAll(".order-button");
 const productType = document.querySelectorAll(".type-product img");
+const buttonLoggin = document.getElementsByClassName("button-login")[0];
+const buttonReggis = document.getElementsByClassName("button-daftar")[0];
 
 buttonOrder.forEach((b) => {
   b.addEventListener("click", () => {
@@ -16,6 +18,14 @@ buttonOrder.forEach((b) => {
         console.log(err);
       });
   });
+});
+
+buttonLoggin.addEventListener("click", () => {
+  window.location.href = "page/user/loginUser.php";
+});
+
+buttonReggis.addEventListener("click", () => {
+  window.location.href = "page/user/regisUser.php";
 });
 
 productType.forEach((e) => {

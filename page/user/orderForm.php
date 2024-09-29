@@ -70,9 +70,9 @@
                     <input class="text-center w-75 my-3 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="number" name="porsi" placeholder="porsi" id="porsi" required>
                     <textarea class="my-3 w-75 text-center border-black border-top-0 border-start-0 border-end-0 border-bottom-10" name="pesan" placeholder="ada pesan ??"></textarea>
                     <input class="text-center w-75 my-3 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="number" type="number" name="harga" placeholder="Rp" id="harga" readonly>
-                    <div class="conteiner-button-order">
-                        <button class="button-order text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Order!!</button>
-                        <button class="button-order-paygate text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Order via Gopay!!</button>
+                    <div class="conteiner-button-order w-50 d-flex justify-content-between d-flex align-items-center">
+                        <button class="button-order text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Cash</button>
+                        <button class="button-order-paygate text-black mb-4 px-4 py-1 rounded" type="submit" name="order">Cashless</button>
                     </div>
         </form>
     </div>

@@ -1,4 +1,11 @@
 <?php
+    session_start();
+
+    if(!isset($_SESSION["loginAdmin"])){
+        header("Location: loginAdmin.php");
+        exit;
+    }
+
     require "../../controller/connection.php";
     require "../../controller/query.php";
 

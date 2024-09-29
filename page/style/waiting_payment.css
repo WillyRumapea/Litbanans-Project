@@ -1,0 +1,16 @@
+body {
+  background-color: #fffaa6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+
+h1 {
+  font-family: "Jaro", system-ui;
+}
+
+p {
+  font-family: "Jaldi", sans-serif;
+}

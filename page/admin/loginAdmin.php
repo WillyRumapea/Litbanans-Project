@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require "../../controller/connection.php";
 
     if(isset($_POST["login"])){
@@ -11,6 +12,7 @@
         if(mysqli_num_rows($result) === 1){
             $row = mysqli_fetch_assoc($result);
             if($password === $row["password"]){
+                $_SESSION["loginAdmin"] = true;
                 header("Location: dashboard.php");
                 exit;
             }else{
