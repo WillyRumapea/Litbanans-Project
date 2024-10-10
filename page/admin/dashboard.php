@@ -65,7 +65,7 @@
                 <td class="text-center"><?= $row["harga"]?></td>
                 <td class="text-center">
                     <div class="continer-button">
-                        <a href="" class="btn btn-warning">edit</a>
+                        <a href="updateOrder.php?id=<?= $row["id"]?>" class="btn btn-warning">edit</a>
                         <a href="../../controller/hapus.php?id=<?= $row["id"]?>" class="btn btn-danger">hapus</a>
                         <a href="../../controller/konfirmasi.php?id=<?= $row["id"];?>" class="btn btn-primary">konfirmasi</a>
                     </div>

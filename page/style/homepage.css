@@ -3,9 +3,13 @@ body {
   background-color: #fffaa6;
 }
 
+header {
+  z-index: 99;
+}
+
 .container-img img.logo-img {
-  width: 130px;
-  height: 100px;
+  width: 120px;
+  height: 90px;
 }
 
 nav .container-nav a {
@@ -16,16 +20,20 @@ nav .container-nav a {
   border-radius: 5px !important;
   outline: none;
   border: 0.5px solid;
-  background-color: #ff7a01;
+  background-color: #ff7c01d9;
   box-shadow: 2px 1px 2px #000;
 }
-
+/* #ff7a01 */
 .container-button-login button.button-daftar {
   border-radius: 5px !important;
   outline: none;
   border: 0.5px solid;
   background-color: #fffaa6;
   box-shadow: 2px 1px 2px #000;
+}
+
+span.username:hover {
+  cursor: pointer;
 }
 
 section.home-section {
@@ -79,13 +87,15 @@ section.about-section {
   height: 400px;
 }
 
-.content-about p.text-about {
-  font-family: "Jaldi", sans-serif;
-  height: 80vh;
+.about-section .container-about-section p.text-about {
+  font-family: "Jaldi", system-ui;
+  background-color: #ffffffab;
+  border-radius: 10px;
 }
 
 .content-product-section p {
   font-family: "Jaldi", system-ui;
+  font-size: 17px;
 }
 
 .content-product-section .type-product img {
@@ -93,9 +103,17 @@ section.about-section {
   height: 60vh;
 }
 
-.content-product-section .product-collection img {
+p.product-sect-content {
   width: 30vw;
-  height: 40vh;
+  display: none;
+}
+
+.content-product-section .product-collection img {
+  width: 180px;
+  height: 330px;
+  border: 5px solid #ff7a01;
+  border-radius: 20px;
+  box-shadow: 6px 5px 2px #000;
 }
 
 .button-product-section button {
@@ -118,6 +136,14 @@ footer {
   border-radius: 7px;
   background-color: #fffaa6;
   box-shadow: 0 5px 2px #222;
+}
+
+.social-med-group h3 {
+  color: #fffaa6;
+  text-shadow: 2px 3px 2px #ff7a01;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid #fffaa6;
 }
 
 .social-med-group ul li a {

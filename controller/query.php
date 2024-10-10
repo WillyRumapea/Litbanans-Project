@@ -31,6 +31,25 @@
         return $rows;
     }
 
+    function updateData($data){
+        global $conn;
+
+        $id = $data["id"];
+        $nama = htmlspecialchars($data["nama"]);
+        $produk = htmlspecialchars($data["produk"]);
+        $rasa = htmlspecialchars($data["rasa"]);
+        $topping = htmlspecialchars($data["topping"]);
+        $porsi = htmlspecialchars($data["porsi"]);
+        $pesan = htmlspecialchars($data["pesan"]);
+        $harga = htmlspecialchars($data["harga"]);
+
+        $updata = "UPDATE order_table SET nama = '$nama', produk = '$produk', rasa = '$rasa', topping = '$topping', porsi = '$porsi', pesan = '$pesan', harga = '$harga' WHERE id = $id";
+
+        mysqli_query($conn,$updata);
+
+        return mysqli_affected_rows($conn);
+    }
+
     function hapus($id){
         global $conn;
         $query = "DELETE FROM order_table WHERE id = $id";

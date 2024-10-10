@@ -1,0 +1,64 @@
+body {
+  font-family: "Jaro", sans-serif;
+  background-color: #fffaa6;
+}
+
+.container-title h1 {
+  box-shadow: 5px 5px 2px #000;
+  background-color: #fbc606;
+}
+
+.container-form form {
+  background: radial-gradient(circle, #fffbba, #fff);
+  box-shadow: 2px 10px 2px #000;
+}
+
+.container-form form textarea {
+  height: 50px;
+}
+.container-form form textarea::placeholder {
+  color: #000000c4;
+}
+
+.container-form form input::placeholder {
+  color: #000000c4;
+}
+
+.container-form form button.button-order {
+  background-color: rgb(255, 122, 1);
+  transition: all ease-in-out 0.2s;
+}
+
+.container-form form .conteiner-button-order button.button-order:hover {
+  background-color: #fff;
+  border: 3px solid #fbc606;
+  color: rgb(251, 198, 6);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  -moz-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  box-shadow: 6px 6px 1px 0px rgba(255, 122, 1, 0.851);
+  scale: 1.1;
+}
+
+.container-form form .conteiner-button-order button.button-order-paygate {
+  background-color: #fbc606;
+  color: #fff;
+  transition: all ease-in-out 0.2s;
+}
+
+.container-form form .conteiner-button-order button.button-order-paygate:hover {
+  color: rgb(255, 122, 1);
+  background-color: #fff;
+  border: 3px solid rgb(255, 122, 1);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  -moz-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  box-shadow: 6px 6px 1px 0px rgba(255, 122, 1, 0.851);
+  scale: 1.1;
+}
+
+@media screen and (max-width: 480px) {
+  .container-form form {
+    width: 80% !important;
+  }
+}
