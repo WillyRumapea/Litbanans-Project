@@ -1,0 +1,19 @@
+body {
+  background-color: #fffaa6;
+}
+
+body .container-logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-logout a {
+  background-color: #ff7c01d9;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Jaro", sans-serif;
+}
