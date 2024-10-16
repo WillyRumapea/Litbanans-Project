@@ -7,6 +7,14 @@ body {
   border: 1px solid;
 }
 
+.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 h1 {
   font-family: "Jaro", system-ui;
 }

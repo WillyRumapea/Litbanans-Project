@@ -37,16 +37,16 @@
     <div class="container-title d-flex align-items-center justify-content-center py-2 px-2">
         <h1 class="text-center w-25 h2 rounded">Daftar</h1>
     </div>
-    <div class="container-form d-flex align-items-center justify-content-center">
-        <form action="" method="post" class="bg-white d-flex justify-content-center d-flex align-items-center flex-column h-100 w-50 rounded">
+    <div class="container-form d-flex align-items-center justify-content-center flex-column">
+        <form action="" method="post" class="bg-white d-flex justify-content-center d-flex align-items-center flex-column h-100 w-25 rounded">
             <input class="text-center w-75 my-4 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="text" name="usernameUser" placeholder="Masukkan Username">
             <input class="text-center w-75 my-4 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="password" name="passwordUser" placeholder="Masukkan Password">
             <input class="text-center w-75 my-4 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="password" name="confirmPassUser" placeholder="Masukkan Password Kembali">
             <button type="submit" name="regisUser" class="regis-user-button text-black mb-5 px-4 py-1 rounded">Register</button>
         </form>
+        <p class="text-center mt-2">Sudah punya akun? Login <a href="loginUser.php">Sini</a></p>    
     </div>
-    <br>
-    <p class="text-center mt-2">Sudah punya akun? Login <a href="loginUser.php">Sini</a></p>
+    <img class="logo-img" src="../../assets/new logo.png" alt="">
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js bootstrap -->

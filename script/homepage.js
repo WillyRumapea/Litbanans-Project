@@ -3,45 +3,44 @@ const productType = document.querySelectorAll(".type-product img");
 const buttonLoggin = document.getElementsByClassName("button-login")[0];
 const buttonReggis = document.getElementsByClassName("button-daftar")[0];
 const headerNav = document.querySelector(".header");
+const typeProductImg = document.querySelectorAll(".product-img");
+const productTitle = document.querySelectorAll(".product-sect-title");
+const productDesc = document.querySelectorAll(".product-sect-desc");
+const imgContent = document.querySelectorAll(".desc-img-content");
 const navLinks = document.querySelectorAll(".nav-link");
-const productSectTitle = document.querySelectorAll(".product-sect-title");
-const productSectContent = document.querySelectorAll(".product-sect-content");
 const usernameProfile = document.querySelector(".username");
 
-productType.forEach((img, index) => {
-  img.addEventListener("mouseover", () => {
-    productSectTitle[index].style.display = "block";
-    productSectContent[index].style.display = "block";
-    productSectTitle[index].style.border = "1px solid";
+typeProductImg.forEach((img, index) => {
+  img.addEventListener("mouseenter", () => {
+    imgContent[index].classList.add("visible");
+    productTitle[index].classList.add("visible");
+    productDesc[index].classList.add("visible");
   });
-  img.addEventListener("mouseout", () => {
-    productSectTitle[index].style.display = "none";
-    productSectContent[index].style.display = "none";
+  img.addEventListener("mouseleave", () => {
+    imgContent[index].classList.remove("visible");
+    productTitle[index].classList.remove("visible");
+    productDesc[index].classList.remove("visible");
   });
 });
 
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault(); // Mencegah perilaku default dari link
+    e.preventDefault();
 
-    const targetId = link.getAttribute("href"); // Mengambil ID dari href
-    const targetElement = document.querySelector(targetId); // Mencari elemen target
+    const targetId = link.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
       const targetPosition =
-        targetElement.getBoundingClientRect().top + window.scrollY - 85; // Menghitung posisi scroll
+        targetElement.getBoundingClientRect().top + window.scrollY - 100;
 
       window.scrollTo({
         top: targetPosition,
-        behavior: "smooth", // Efek scroll yang halus
+        behavior: "smooth",
       });
 
-      // Mengatur kelas active
-      navLinks.forEach((l) => l.classList.remove("active")); // Menghapus kelas active dari semua link
-      link.classList.add("active"); // Menambahkan kelas active pada link yang diklik
-
-      // Menyembunyikan header
-      // header.classList.add("header-hidden");
+      navLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
     }
   });
 });

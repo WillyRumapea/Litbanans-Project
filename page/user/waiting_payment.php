@@ -43,11 +43,12 @@
       src="https://lottie.host/73aff097-a843-4371-a17d-673aa0e26bd8/5Xm3kDUgxU.json"
       background="##FFFFFF"
       speed="1"
-      style="width: 250px; height: 250px"
+      style="width: 250px; height: 250px; text-align:center"
       loop
       autoplay
       direction="1"
       mode="normal"
+      class="animation-hand"
     ></lottie-player>
     </div>
 </body>

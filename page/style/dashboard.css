@@ -1,0 +1,63 @@
+body {
+  background-color: #fffaa6;
+  font-family: "Jaro", sans-serif;
+}
+
+.container-header {
+  background-color: #fbc606;
+}
+
+.container-header img.logo-img {
+  width: 70px;
+}
+
+.container-header p {
+  text-align: center;
+  padding: 14px;
+}
+
+.nav-and-pagination {
+  gap: 20%;
+  width: 100%;
+}
+
+.container-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-table .nav-and-pagination .container-pagination a {
+  color: #fffaa6;
+  text-decoration: none;
+}
+
+.container-table .nav-and-pagination .container-pagination a.active {
+  color: #000;
+}
+
+.container-add-order a.-add-order {
+  text-decoration: none;
+  color: #000;
+}
+
+form input {
+  text-align: center;
+  border: 1px solid;
+  width: 220px;
+  border-radius: 10px;
+}
+
+form button.button-search {
+  width: 100px;
+  border-radius: 20px;
+  background-color: #fbc606;
+  border: 1px solid;
+}
+
+table tr th,
+table tr td {
+  font-family: "Jaldi", sans-serif;
+}

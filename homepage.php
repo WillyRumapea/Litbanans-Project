@@ -76,14 +76,18 @@
                     <p class="product-definition-text text-center py-1 px-2 mt-2">Kami dengan bangga mempersembahkan dua jenis produk kami yang pastinya akan sangat anda dan pelanggan lainnya sukai, yaitu Pisang Lumer dan Banana Rolls.</p>
                     <div class="type-product d-flex align-items-center justify-content-evenly w-100 h-75 py-5" >
                         <div class="border-img d-flex align-items-center justify-content-center flex-column">
-                            <img src="assets/product-sect/Rectangle 10.svg" alt="" >
-                            <h3 class="product-sect-title" style="display: none;">Pisang Lumer</h3>
-                            <p class="product-sect-content" style="border: 1px solid;"> Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. Tersedia dalam berbagai rasa dan topping pilihan mu.</p>
+                            <img src="assets/product-sect/Rectangle 10.svg" alt="" class="product-img">
+                            <div class="desc-img-content">
+                                <h3 class="product-sect-title">Pisang Lumer</h3>
+                                <p class="product-sect-desc"> Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. Tersedia dalam berbagai rasa dan topping pilihan mu.</p>
+                            </div>
                         </div>
-                        <div class="border-img d-flex align-items-center justify-content-center flex-column" style="height:280px">
-                            <img src="assets/product-sect/Rectangle 11.svg" alt="">
-                            <h3 class="product-sect-title" style="display: none;">Banana Rolls</h3>
-                            <p class="product-sect-content" style="border: 1px solid;"> Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. Tersedia dalam berbagai rasa dan topping pilihan mu.</p>
+                        <div class="border-img d-flex align-items-center justify-content-center flex-column">
+                            <img src="assets/product-sect/Rectangle 11.svg" alt="" class="product-img">
+                            <div class="desc-img-content">
+                                <h3 class="product-sect-title">Banana Rolls</h3>
+                                <p class="product-sect-desc" > Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. Tersedia dalam berbagai rasa dan topping pilihan mu.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="product-collection d-flex align-item-center justify-content-around w-100 p-3">

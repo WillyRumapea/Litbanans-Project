@@ -49,15 +49,15 @@
     <div class="container-title d-flex align-items-center justify-content-center py-2 px-2">
         <h1 class="title text-center w-25 h2 rounded" style="background-color: #fbc606;">Login</h1>
     </div>
-    <div class="container-form d-flex align-items-center justify-content-center">
-        <form action="" method="post" style="border: 1px solid;" class=" bg-white d-flex justify-content-center d-flex align-items-center flex-column h-100 w-50 rounded">
+    <div class="container-form d-flex align-items-center justify-content-center flex-column">
+        <form action="" method="post" class=" bg-white d-flex justify-content-center d-flex align-items-center flex-column h-100 w-25 rounded">
             <input class="text-center w-75 my-5 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="text" name="username" placeholder="masukkan username">
             <input class="text-center w-75 mb-5 border-black border-top-0 border-start-0 border-end-0 border-bottom-10" type="password" name="password" placeholder="masukkan password" mb-3>
             <button type="submit" class="login-user-button text-black mb-5 px-4 py-1 rounded" name="login">Login</button>
         </form>
+        <p class="text-center mt-2">Belum punya akun? Regis <a href="regisUser.php">Sini</a></p>
     </div>
-    <br>
-    <p class="text-center mt-2">Belum punya akun? Regis <a href="regisUser.php">Sini</a></p>
+    <img class="logo-img" src="../../assets/new logo.png" alt="">
 
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
