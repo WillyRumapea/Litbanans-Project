@@ -61,4 +61,8 @@ body {
   .container-form form {
     width: 80% !important;
   }
+
+  .conteiner-button-order {
+    width: 200px !important;
+  }
 }

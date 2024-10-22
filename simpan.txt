@@ -1,0 +1,35 @@
+<header class="header position-fixed d-flex w-100">
+        <nav class="navbar navbar-expand-sm navbar-light w-100 d-flex justify-content-between align-item-bottom flex-row px-4" >
+            <a href="homepage.php" class="navbar-brand h1">
+                <img src="assets/new logo.png" class="d-inline-block" alt="" width="100" height="70">
+            </a>
+            <div class="container-ham-menu py-4">
+                <button type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" class="navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#HOME" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#ABOUT" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#PRODUCT" class="nav-link active">Product</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#CONTACT" class="nav-link active">Footer</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="" class="dropdown-item button-login">Login</a></li>
+                            <li><a href="" class="dropdown-item button-daftar">Daftar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>

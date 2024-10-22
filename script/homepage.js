@@ -2,13 +2,30 @@ const buttonOrder = document.querySelectorAll(".order-button");
 const productType = document.querySelectorAll(".type-product img");
 const buttonLoggin = document.getElementsByClassName("button-login")[0];
 const buttonReggis = document.getElementsByClassName("button-daftar")[0];
-const headerNav = document.querySelector(".header");
+const headerNav = document.getElementsByTagName("header")[0];
+const navLinks = document.querySelectorAll(".nav-link");
 const typeProductImg = document.querySelectorAll(".product-img");
 const productTitle = document.querySelectorAll(".product-sect-title");
 const productDesc = document.querySelectorAll(".product-sect-desc");
 const imgContent = document.querySelectorAll(".desc-img-content");
-const navLinks = document.querySelectorAll(".nav-link");
 const usernameProfile = document.querySelector(".username");
+const imgCollection = document.querySelectorAll(".img-collect");
+const collTitle = document.querySelectorAll(".collect-title");
+const collText = document.querySelectorAll(".collect-text");
+const descProdColl = document.querySelectorAll(".content-text-collect-product");
+
+imgCollection.forEach((img, index) => {
+  img.addEventListener("mouseenter", () => {
+    descProdColl[index].classList.add("visible");
+    collTitle[index].classList.add("visible");
+    collText[index].classList.add("visible");
+  });
+  img.addEventListener("mouseleave", () => {
+    descProdColl[index].classList.remove("visible");
+    collTitle[index].classList.remove("visible");
+    collText[index].classList.remove("visible");
+  });
+});
 
 typeProductImg.forEach((img, index) => {
   img.addEventListener("mouseenter", () => {
@@ -26,22 +43,14 @@ typeProductImg.forEach((img, index) => {
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-
-    const targetId = link.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-
-    if (targetElement) {
-      const targetPosition =
-        targetElement.getBoundingClientRect().top + window.scrollY - 100;
-
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
-
-      navLinks.forEach((l) => l.classList.remove("active"));
-      link.classList.add("active");
-    }
+    const targetID = e.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetID);
+    const targetPosition =
+      targetElement.getBoundingClientRect().top + window.pageYOffset - 100;
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
   });
 });
 

@@ -24,36 +24,39 @@
     <!-- fonts -->    
 
     <!-- icon -->
-    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <!-- icon -->
 </head>
 <body>
-    <header class="header position-fixed w-100 px-2 py-2" >
-        <div class="container-header d-flex align-items-center justify-content-between px-2" > 
-            <div class="container-img">
-                <img src="assets/logo.svg" alt="Logo Litbanans" class="logo-img" >
+    <header>
+        <nav class="navbar">
+            <div class="container-img-logo">
+                <a href="homepage.php">
+                    <img src="assets/new logo.png" width="120" height="80" alt="logo img">
+                </a>
             </div>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary w-50 d-flex align-items-center justify-content-around" >
-                <div class="container-nav navbar-nav d-flex align-items-center justify-content-around w-50">
-                    <a class="nav-link active fs-5 text" href="#HOME">Home</a>
-                    <a class="nav-link active fs-5 text" href="#ABOUT">About</a>
-                    <a class="nav-link fs-5 text" href="#PRODUCT">Product</a>
-                    <a class="nav-link active fs-5 text" href="#CONTACT">Contact</a>
-                </div>
-            </nav>
-            <div class="container-button-login p-2">
+            <div class="container-navbar">
+                <ul>
+                    <li><a href="#HOME" class="nav-link">Home</a></li>
+                    <li><a href="#ABOUT" class="nav-link">About</a></li>
+                    <li><a href="#PRODUCT" class="nav-link">Product</a></li>
+                    <li><a href="#CONTACT" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="container-loggin-button">
                 <?php if(isset($_SESSION["username"])):?>
                     <span class="username fs-5" style="border: 1px solid; background-color:darkorange; border-radius:5px; padding:5px; box-shadow: 2px 1px 2px #000;"><?= htmlspecialchars($_SESSION["username"])?></span>
                 <?php else:?>
-                    <button class="px-3 py-1 button-login">Login</button>
-                    <button class="px-3 py-1 button-daftar ms-1">Daftar</button>
-                <?php endif;?>    
+                    <button class="button-login">Loggin</button>
+                    <button class="button-daftar">Regis</button>
+                        <?php endif;?> 
             </div>
-        </div>
+            <span class="material-symbols-outlined ham-menu">menu</span>
+        </nav>
     </header>
     <main>
         <section class="home-section mb-3" id="HOME">
-            <div class="container-img-home">
+            <div class="container-img-home" >
                 <img src="assets/hero-img.svg" alt="banana logo" class="center-img">
                 <div class="bottom-img-home d-flex align-items-center justify-content-between ">
                     <img src="assets/kiri.svg" alt="animation product" class="home-left-img">
@@ -91,13 +94,44 @@
                         </div>
                     </div>
                     <div class="product-collection d-flex align-item-center justify-content-around w-100 p-3">
-                        <img src="assets/product-sect/piscok_coklat_keju.jpg" alt="gambar_produk">
-                        <img src="assets/product-sect/pisang_lumer_cappucino.jpg" alt="gambar_produk">
-                        <img src="assets/product-sect/pisang_lumer_coklat.jpg" alt="gambar_produk">
-                        <img src="assets/product-sect/piscok_coklat.jpg" alt="gambar_produk">
-                        <img src="assets/product-sect/pislum_mix_coklat_strawberry.jpg" alt="gambar_produk">
+                        <div class="desc-prod-collect">
+                            <img src="assets/product-sect/piscok_coklat_keju.jpg" class="img-collect" alt="gambar_produk">
+                            <div class="content-text-collect-product">
+                                <h3 class="collect-title">Piscok Coklat Keju</h3>
+                                <p class="collect-text">Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut.</p>
+                            </div>
+                        </div>
+                        <div class="desc-prod-collect">
+                            <img src="assets/product-sect/pisang_lumer_cappucino.jpg" class="img-collect" alt="gambar_produk">
+                            <div class="content-text-collect-product">
+                                <h3 class="collect-title">Piscok Lumer Cappucino</h3>
+                                <p class="collect-text">Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. </p>
+                            </div>
+                        </div>
+                        <div class="desc-prod-collect">
+                            <img src="assets/product-sect/pisang_lumer_coklat.jpg" class="img-collect" alt="gambar_produk">
+                            <div class="content-text-collect-product">
+                                <h3 class="collect-title">Piscok Lumer Coklat</h3>
+                                <p class="collect-text">Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. </p>
+                            </div>
+                        </div>
+                        <div class="desc-prod-collect">
+                            <img src="assets/product-sect/piscok_coklat.jpg"  class="img-collect"alt="gambar_produk">
+                            <div class="content-text-collect-product">
+                                <h3 class="collect-title">Piscok Coklat Meises</h3>
+                                <p class="collect-text">Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. </p>
+                            </div>
+                        </div> 
+                        <div class="desc-prod-collect">
+                            <img src="assets/product-sect/pislum_mix_coklat_strawberry.jpg" class="img-collect" alt="gambar_produk">
+                            <div class="content-text-collect-product">
+                                <h3 class="collect-title">Piscok Lumer Mix</h3>
+                                <p class="collect-text">Dibuat dari pisang pilihan berkualitas yang diolah dengan cara khusus sehingga menghasilkan tekstur lembut dan lumer di mulut. </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <img src="assets/new logo.png" class="background-img-product" alt="">
                 <div class="button-product-section mt-4">
                     <button class="fs-4 order-button">ORDER NOW</button>
                 </div>
@@ -125,10 +159,7 @@
 
     <!-- js script -->
     <script src="script/homepage.js"></script>
+    <script src="script/navbar.js"></script>
     <!-- js script -->
-     
-     <script>
-        feather.replace();
-     </script>
 </body>
 </html>
