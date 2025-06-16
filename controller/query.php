@@ -11,11 +11,30 @@
         $porsi = htmlspecialchars($data["porsi"]);
         $pesan = htmlspecialchars($data["pesan"]);
         $harga = htmlspecialchars($data["harga"]);
+        $alamat = htmlspecialchars($data["alamat"]);
         $status_pembayaran = 0;
 
-        $qpost = "INSERT INTO order_table VALUES ('','$nama','$produk','$rasa','$topping','$porsi','$pesan','$harga','$status_pembayaran')";
+        $qpost = "INSERT INTO order_table VALUES ('','$nama','$produk','$rasa','$topping','$porsi','$pesan','$harga', '$alamat', '$status_pembayaran')";
 
         mysqli_query($conn,$qpost);
+
+        return mysqli_affected_rows($conn);
+    }
+
+        
+    function addReport($data){
+        global $conn;
+
+        $nama = htmlspecialchars($data["nama"]);
+        $pesan = htmlspecialchars($data["pesan"]);
+
+        $reportPost = "INSERT INTO report_table VALUES('', '$nama', '$pesan')";
+
+        $result = mysqli_query($conn, $reportPost);
+
+        if(!$result){
+        echo "Query Error: " . mysqli_error($conn);
+        }
 
         return mysqli_affected_rows($conn);
     }
@@ -46,7 +65,7 @@
         $updata = "UPDATE order_table SET nama = '$nama', produk = '$produk', rasa = '$rasa', topping = '$topping', porsi = '$porsi', pesan = '$pesan', harga = '$harga' WHERE id = $id";
 
         mysqli_query($conn,$updata);
-
+        
         return mysqli_affected_rows($conn);
     }
 
@@ -81,4 +100,5 @@
 
         return mysqli_affected_rows($conn);
     }
+
 ?>

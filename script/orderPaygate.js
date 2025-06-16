@@ -5,6 +5,7 @@ orderPaygate.addEventListener("click", async (e) => {
   e.preventDefault();
 
   const formData = new FormData(orderForm);
+  const alamatValue = formData.get("alamat")?.trim();
   try {
     const response = await fetch("../../controller/place_order.php", {
       method: "POST",
@@ -13,9 +14,12 @@ orderPaygate.addEventListener("click", async (e) => {
     const token = await response.text();
     window.snap.pay(token, {
       onSuccess: function (result) {
-        alert("payment success!!");
         console.log(result);
-        window.location.href = "../../homepage.php";
+        if (alamatValue) {
+          window.location.href = "./waiting_delivery.php";
+        } else {
+          window.location.href = "../../homepage.php";
+        }
       },
       onError: function (result) {
         alert("payment failed!!");

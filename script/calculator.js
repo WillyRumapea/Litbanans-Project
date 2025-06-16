@@ -27,6 +27,10 @@ const topping = {
   springkles: 2000,
 };
 
+const checkboxAlamat = document.getElementById("checkboxAlamat");
+const inputAlamat = document.getElementById("alamat");
+const orderCash = document.querySelector(".button-order");
+
 function calculatorHarga() {
   const priceInput = document.getElementById("harga");
   const portionInput = parseInt(document.getElementById("porsi").value || 1);
@@ -60,4 +64,17 @@ document.addEventListener("DOMContentLoaded", () => {
   priceInput.addEventListener("change", () => {
     calculatorHarga();
   });
+});
+
+checkboxAlamat.addEventListener("click", () => {
+  if (checkboxAlamat.checked) {
+    inputAlamat.removeAttribute("hidden");
+    orderCash.disabled = true;
+    orderCash.style.pointerEvents = "none";
+  } else {
+    inputAlamat.setAttribute("hidden", "");
+    inputAlamat.value = "";
+    orderCash.disabled = false;
+    orderCash.style.pointerEvents = "auto";
+  }
 });

@@ -1,0 +1,106 @@
+body {
+  background-color: #fffaa6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h1 {
+  margin-top: 90px;
+  font-family: "Jaro", system-ui;
+}
+
+p {
+  font-family: "Jaldi", sans-serif;
+}
+
+.container-button {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* gap: 5px; */
+}
+
+.select-opt {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 150px;
+  padding-top: 20px;
+  width: 500px;
+  height: 180px;
+}
+
+form.form-report-customer {
+  width: 80vw;
+}
+
+.conf-button {
+  width: 350px;
+}
+
+button#confirmButton {
+  font-weight: 600;
+  font-family: "Jaro", system-ui;
+  background-color: rgb(255, 122, 1);
+  transition: all ease-in-out 0.2s;
+}
+
+button#confirmButton:hover {
+  background-color: #fff;
+  border: 3px solid #fbc606;
+  color: rgb(251, 198, 6);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  -moz-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  box-shadow: 6px 6px 1px 0px rgba(255, 122, 1, 0.851);
+  scale: 1.1;
+}
+
+button#notConfirmButton {
+  background-color: #fbc606;
+  color: #fff;
+  font-family: "Jaro", system-ui;
+  transition: all ease-in-out 0.2s;
+}
+
+button#notConfirmButton:hover {
+  color: rgb(255, 122, 1);
+  background-color: #fff;
+  border: 3px solid rgb(255, 122, 1);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  -moz-box-shadow: 6px 6px 1px 0px rgba(251, 198, 6, 0.75);
+  box-shadow: 6px 6px 1px 0px rgba(255, 122, 1, 0.851);
+  scale: 1.1;
+}
+
+button.exit {
+  margin-left: 120px;
+  width: 100px;
+  color: #fff;
+  font-family: "Jaro", system-ui;
+  background-color: red;
+  opacity: 0.8;
+}
+
+button.submitReport {
+  width: 150px;
+  font-family: "Jaro", system-ui;
+  background-color: #0000ff;
+  opacity: 0.93;
+  color: #fff;
+}
